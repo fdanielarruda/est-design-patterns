@@ -1,8 +1,8 @@
-import { Email } from "./email";
-import { EmailTwilio } from "./emailTwilio";
 import { MessageFactory } from "./messageFactory";
-import { Sms } from "./sms";
-import { SmsTwilio } from "./smsTwilio";
+import { Email } from "../products/email/email";
+import { EmailTwilio } from "../products/email/emailTwilio";
+import { Sms } from "../products/sms/sms";
+import { SmsTwilio } from "../products/sms/smsTwilio";
 
 export class TwilioMessageFactory implements MessageFactory {
     createEmail(): Email {

@@ -1,8 +1,8 @@
-import { Email } from "./email";
-import { EmailNexmo } from "./emailNexmo";
 import { MessageFactory } from "./messageFactory";
-import { Sms } from "./sms";
-import { SmsNexmo } from "./smsNexmo";
+import { Email } from "../products/email/email";
+import { EmailNexmo } from "../products/email/emailNexmo";
+import { Sms } from "../products/sms/sms";
+import { SmsNexmo } from "../products/sms/smsNexmo";
 
 export class NexmoMessageFactory implements MessageFactory {
     createEmail(): Email {

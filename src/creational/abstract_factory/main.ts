@@ -1,6 +1,6 @@
-import { MessageFactory } from "./messageFactory";
-import { NexmoMessageFactory } from "./nexmoMessageFactory";
-import { TwilioMessageFactory } from "./twilioMessageFactory";
+import { MessageFactory } from "./factories/messageFactory";
+import { NexmoMessageFactory } from "./factories/nexmoMessageFactory";
+import { TwilioMessageFactory } from "./factories/twilioMessageFactory";
 
 function clientCode(factory: MessageFactory) {
     const email = factory.createEmail();
