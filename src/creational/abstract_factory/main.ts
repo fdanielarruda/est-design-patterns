@@ -1,16 +1,11 @@
-import { MessageFactory } from "./factories/messageFactory";
 import { NexmoMessageFactory } from "./factories/nexmoMessageFactory";
 import { TwilioMessageFactory } from "./factories/twilioMessageFactory";
-
-function clientCode(factory: MessageFactory) {
-    const email = factory.createEmail();
-    const sms = factory.createSms();
-
-    email.send();
-    sms.send();
-}
+import { UseCase } from "./useCase";
 
 console.log('Abstract Factory Pattern\n')
 
-clientCode(new NexmoMessageFactory());
-clientCode(new TwilioMessageFactory());
+const ucNexmo = new UseCase(new NexmoMessageFactory());
+ucNexmo.sendAll();
+
+const ucTwilio = new UseCase(new TwilioMessageFactory());
+ucTwilio.sendAll();
