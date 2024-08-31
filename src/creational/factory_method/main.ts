@@ -1,6 +1,6 @@
-import { ConcreteLogisticsCar } from "./concreteLogisticsCar"
-import { ConcreteLogisticsTrain } from "./concreteLogisticsTrain"
-import { Logistics } from "./logistics"
+import { ConcreteLogisticsCar } from "./creators/concreteLogisticsCar"
+import { ConcreteLogisticsTrain } from "./creators/concreteLogisticsTrain"
+import { Logistics } from "./creators/logistics"
 
 function clientCode(creator: Logistics) {
     console.log(creator.planDelivery())

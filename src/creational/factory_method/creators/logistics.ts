@@ -1,4 +1,4 @@
-import { Transport } from "./transport"
+import { Transport } from "../products/transport"
 
 export abstract class Logistics
 {
