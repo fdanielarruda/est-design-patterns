@@ -8,7 +8,9 @@
     "factory_method": "npx tsx src/creational/factory_method/main.ts",
     "abstract_factory": "npx tsx src/creational/abstract_factory/main.ts",
     "builder": "npx tsx src/creational/builder/main.ts",
-    "singleton": "npx tsx src/creational/singleton/main.ts"
+    "singleton": "npx tsx src/creational/singleton/main.ts",
+
+    "adapter": "npx tsx src/structural/adapter/main.ts"
   },
   "author": "",
   "license": "ISC",
