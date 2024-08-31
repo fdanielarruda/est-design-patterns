@@ -1,5 +1,5 @@
-import { Director } from "./director";
-import { ReportBuilder } from "./reportBuilder";
+import { Director } from "./core/director";
+import { ReportBuilder } from "./builders/reportBuilder";
 
 function clientCode(director: Director) {
     const builder = new ReportBuilder()
@@ -19,5 +19,4 @@ function clientCode(director: Director) {
     builder.getReport().listParts()
 }
 
-const director = new Director()
-clientCode(director)
+clientCode(new Director())

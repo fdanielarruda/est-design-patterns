@@ -1,4 +1,4 @@
-import { Report } from "./report"
+import { Report } from "../products/report"
 
 export interface Builder {
     reset(): void

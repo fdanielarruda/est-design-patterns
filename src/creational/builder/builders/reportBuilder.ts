@@ -1,5 +1,5 @@
 import { Builder } from "./builder";
-import { Report } from "./report";
+import { Report } from "../products/report";
 
 export class ReportBuilder implements Builder {
     private report: Report
